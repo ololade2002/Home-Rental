@@ -1,0 +1,14 @@
+ .top {
+  height: 130vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+ }
+
+
+ @media screen and (max-width:450px) {
+    .top {
+        background-size: contain;
+        height: 120vh;
+    }
+ }

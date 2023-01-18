@@ -1,0 +1,143 @@
+
+.hero {
+    display: flex;
+   padding: 2rem 4rem;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.hero-l {
+    flex: 1;
+   
+}
+.hero-l>h2 {
+    width: 90%;
+    font-size: 45px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: white;
+    text-align: left;
+}
+
+.hero-r {
+  
+    display: flex;
+    flex-direction: column;
+   column-gap: 2rem;
+ justify-content: center;
+ align-items: center;
+
+}
+.hero-r>div:nth-of-type(1)>img {
+    width: 408px;
+    height: 340px;
+}
+.hero-r>div:nth-of-type(2) {
+ 
+    padding: 1rem 0rem;
+    width: 100%;
+}
+
+.options {
+    display: flex;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+ justify-content: center;
+ padding: 1rem 0rem;
+ margin: 0rem 1.5rem;
+
+}
+.options>select {
+   display: flex;
+   gap: 2rem;
+   letter-spacing: 0.2px;
+ 
+}
+
+.options>select:nth-of-type(1) {
+    background: #F9F9F9;
+border: 1px solid #E6E6E6;
+border-radius: 5px 0px 0px 5px;
+font-size: 15px;
+}
+
+.options>select:nth-of-type(2) {
+    background: #F9F9F9;
+   
+border: 1px solid #E6E6E6;
+font-size: 15px;
+}
+
+.options .search {
+    background: #23A6F0;
+border: 1px solid #E6E6E6;
+border-radius: 0px 5px 5px 0px;
+padding: 1rem 1.5rem;
+}
+.options>.search>img {
+    width: 1.5rem;
+}
+
+  
+@media screen and (max-width:1024px) {
+    .hero-l>h2 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:992px) {
+   .hero {
+    padding: 2rem 2rem;
+   }
+    .hero-l>h2  {
+       font-size: 38px;
+    }
+    .hero-r>div:nth-of-type(1)>img {
+        width: 360px;
+    }
+}
+
+@media screen and (max-width:800px) {
+.hero {
+    flex-direction: column;
+    height: auto;
+   
+}
+.hero-l>h2 {
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 35px;
+    width: 80%;
+    margin: auto;
+}
+}
+
+@media screen and (max-width:540px)  {
+    .hero {
+        gap: 1rem;
+        padding: 2rem 2rem;
+    }
+    .hero-l>h2 {
+        width: 100%;
+      font-size: 28px;
+      
+    }
+}
+
+@media screen and (max-width:350px) {
+    .hero-l>h2 {
+        font-size: x-large;
+    }
+
+}
+
+@media screen and (max-width:300px) {
+    .hero-l>h2 {
+        width: 100%;
+      font-size: 20px;
+      
+    }
+
+}

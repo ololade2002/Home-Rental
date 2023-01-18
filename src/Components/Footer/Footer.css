@@ -1,0 +1,137 @@
+
+.footer {
+    padding: 0rem 4rem;
+    background: #fff;
+
+}
+.body {
+    border-top: 2px solid #F4511E;
+    display: flex;
+    padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.footer-l {
+    flex: 3;
+  
+    display: flex;
+    justify-content: center;
+}
+.footer-l>img {
+    width: 10rem;
+    object-fit: contain;
+    filter: invert(0) brightness(0) contrast(100);
+}
+.footer-r {
+    flex: 3;
+    
+}
+.footer-r>.first {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    
+}
+.first>img {
+    width: .9rem;
+}
+.first>p {
+    font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+color: #0A142F;
+}
+.second {
+    display: flex;
+    padding-bottom: 1rem;
+   gap: 5rem;
+}
+.second>div {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.second>div>p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #0A142F;
+}
+.third {
+    display: flex;
+    align-items: center;
+}
+.third>p {
+    font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+color: #0A142F;
+mix-blend-mode: normal;
+opacity: 0.5;
+}
+.third>ul {
+    display: flex;
+    gap: 1rem;
+}
+.third>ul>li {
+    list-style: none;
+}
+.end {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.end>ul {
+    display: flex;
+    gap: .8rem;
+}
+.end>ul>li {
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 400;
+font-size: 13px;
+line-height: 17px;
+text-transform: uppercase;
+color: #0A142F;
+}
+.end>ul>li:hover {
+    color: #000;
+}
+.end>div>p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;  
+    color: #0A142F;
+}
+
+@media screen and (max-width:992px) {
+    .footer {
+        padding: 0rem 2rem;
+    }
+    .second {
+        gap: 2rem;
+    }
+    .end {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:768px) {
+  .body {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0rem;
+  }
+}
+
+@media screen and (max-width:499px) {
+    .end>ul>li {
+        display: none;
+    }
+    .end>div>p {
+        text-align: center;
+    }
+  }
+  

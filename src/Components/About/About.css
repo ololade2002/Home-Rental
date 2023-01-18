@@ -1,0 +1,140 @@
+
+.about {
+    padding: 4rem 4rem;
+    
+}
+.about>h2 {
+    text-align: left;
+    font-weight: 500;
+    font-size: 28px;
+    color: #18191F;
+    padding-bottom: 2rem;
+}
+.about>h2>span {
+    border-bottom: 3px solid #F4511E;
+}
+.about-body {
+    display: flex;
+    gap: 1rem;
+}
+.about-l {
+    flex: 1;
+  
+}
+.about-l>img {
+    width: 350px;
+   height: 430px;
+    box-shadow: 5px 24px 53px rgba(0, 0, 0, 0.25);
+   border-radius: 50px 0px;
+}
+
+.about-r {
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+  justify-content: center;
+   gap: 3rem 1rem;
+    align-content: center;
+}
+.about-preview {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  width: 30%;
+}
+.about-preview>div {
+   
+    background: #FFFFFF;
+box-shadow: 0px 12px 19px rgba(0, 0, 0, 0.15);
+border-radius: 10px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+   margin-bottom: 1rem;
+    align-items: center;
+}
+.about-preview>div>img {
+    width: 1.4rem;
+  
+}
+.about-preview>p {
+   font-weight: 500;
+   text-transform: capitalize;
+   font-size: 16px;
+   width: 90%;
+}
+
+@media screen and (max-width:1180px) {
+    .about-preview>p {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:992px) {
+.about {
+    padding: 4rem 2rem;
+}
+.about-r {
+    gap: 1rem 2rem;
+    justify-content: space-evenly;
+}
+.about-preview {
+width: 35%;
+padding: 0rem 0rem;
+}
+.about-l>img {
+    width: 320px;
+}
+}
+
+@media screen and (max-width:768px) {
+    .about>h2 {
+        font-size: 23px;
+    }
+.about-body {
+    display: flex;
+    flex-direction: column;
+}
+.about-l>img  {
+    width: 100%;
+    object-fit: cover;
+}
+.about-preview {
+    
+    width: 40%;
+ padding-top: 1.5rem;
+    }
+}
+
+@media screen and (max-width:592px) {
+    .about-preview>p {
+        font-size: 15px;
+    }
+    .about>h2 {
+        line-height: 45px;
+        text-align: center;
+    }
+    .about-l>img {
+        height: 360px;
+    }
+}
+
+
+@media screen and (max-width:350px)  {
+.about-preview {
+    width: 100%;
+}
+.about-r {
+    gap: 0rem;
+    padding: 1rem 1rem;
+}
+.about>h2 {
+    font-size: 16px;
+    text-align: center;
+  line-height: 30px;
+}
+.about-l>img {
+    height: 300px;
+}
+}
